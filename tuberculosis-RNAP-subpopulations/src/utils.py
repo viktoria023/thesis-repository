@@ -49,7 +49,7 @@ def plot_compensation_barplot(
 
     if save_figure:
         # save figure in high resolution
-        fig.savefig(f"pdf/{save_name}.pdf", bbox_inches="tight", transparent=True)
+        fig.savefig(f"pdf/{save_name}.svg", format='svg', dpi=1200, bbox_inches='tight')
 
     plt.show()
 
@@ -143,7 +143,7 @@ def plot_stats_histogram(
 
     # save figure if print_stats is True
     if save_figure:
-        fig.savefig(f"pdf/{save_name}.pdf", bbox_inches="tight", transparent=True)
+        fig.savefig(f"pdf/{save_name}.svg", format='svg', dpi=1200, bbox_inches='tight')
 
 
 def plot_performance_frs(
@@ -187,9 +187,8 @@ def plot_performance_frs(
 
     if save_figure:
         fig.savefig(
-            f"pdf/{save_name}.pdf",
-            bbox_inches="tight",
-            transparent=True,
+            f"pdf/{save_name}.svg",
+            format='svg', dpi=1200, bbox_inches='tight'
         )
 
     plt.show()
@@ -302,7 +301,7 @@ def plot_histogram(
 
     # save figure if print_stats is True
     if save_figure:
-        fig.savefig(f"pdf/{save_name}.pdf", bbox_inches="tight", transparent=True)
+        fig.savefig(f"pdf/{save_name}.svg", format='svg', dpi=1200, bbox_inches='tight')
 
 
 def plot_frs_histogram(df, savefig=False, save_name="hist-FRS-RAV"):
@@ -318,7 +317,7 @@ def plot_frs_histogram(df, savefig=False, save_name="hist-FRS-RAV"):
     fig = axes.get_figure()
     fig.set_size_inches(3, 2)
     if savefig:
-        fig.savefig(f"pdf/{save_name}.pdf", bbox_inches="tight", transparent=True)
+        fig.savefig(f"pdf/{save_name}.svg", format='svg', dpi=1200, bbox_inches='tight')
 
 
 def calculate_results_row(df, description=None, min_FRS=None):
