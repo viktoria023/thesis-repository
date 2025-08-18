@@ -1,6 +1,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/fowler-lab/tb-rnap-compensation/blob/main/Recreate_figures_paper.ipynb
+https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tb-rnap-compensation/Recreate_figures_paper.ipynb
 )
+
 # tb-rnap-compensation
 Brunner V, Fowler PW
 
