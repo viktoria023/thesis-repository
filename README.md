@@ -10,6 +10,6 @@ To reproduce the figures, click the corresponding button next to the chapter tit
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tb-rnap-compensation/Recreate_figures_paper.ipynb
 )
 
-2) Results Chapter 2: **Minor alleles in _M. tuberculosis_ and _E. coli_**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+2) Results Chapter 2: **Subpopulations in bacterial infections**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tuberculosis-RNAP-subpopulations/analysis_refactored.ipynb
 )
