@@ -319,6 +319,85 @@ def plot_frs_histogram(df, savefig=False, save_name="hist-FRS-RAV"):
     if savefig:
         fig.savefig(f"pdf/{save_name}.svg", format='svg', dpi=1200, bbox_inches='tight')
 
+def plot_het_frs_histogram(df, RAV_FRS=None, lineage_count=None, savefig=False, i=None):
+    """
+    Plot the FRS distribution for a given DataFrame with optional RAV FRS line.
+
+    Parameters:
+    df (pd.DataFrame): DataFrame containing 'FRS' column.
+    RAV_FRS (float): RAV FRS value to mark with vertical line.
+    lineage_count (int): Number of lineages for the RAV variant.
+    savefig (bool): Whether to save the figure as a PDF.
+    """
+    # Create figure with better styling
+    fig, ax = plt.subplots(figsize=(3.5, 1.8))
+
+    # Create histogram with improved styling
+    n, bins, patches = ax.hist(
+        df["FRS"], bins=np.arange(0.05, 1, 0.025), color="red", alpha=0.5, linewidth=0.5
+    )
+
+    # Add vertical line(s) for RAV FRS if provided
+    if RAV_FRS is not None:
+        label_text = "RAV FRS"
+        ax.axvline(
+            x=RAV_FRS,
+            color="black",
+            linestyle="--",
+            linewidth=1.5,
+            alpha=0.9,
+            label=label_text,
+        )
+
+        # Add legend with better styling
+        # legend = ax.legend(loc='upper right', framealpha=0.9)
+        # legend.get_frame().set_facecolor('#f8f9fa')
+
+    # Improve axis labels and title
+    ax.set_xlabel("FRS")
+    # ax.set_ylabel('Number of Mutations', fontsize=12)
+
+    # Remove top and right spines for cleaner look
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_visible(False)
+    # ax.spines['left'].set_linewidth(0.8)
+    ax.spines["bottom"].set_linewidth(0.8)
+    ax.set_yticks([])  # Remove y-ticks for cleaner look
+
+    # Improve tick styling
+    ax.tick_params(axis="both", which="major", labelsize=7, length=4, width=0.8)
+    ax.tick_params(axis="both", which="minor", length=2, width=0.5)
+
+    # Set x-axis limits and add grid
+    ax.set_xlim(0, 1)
+    # ax.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
+    ax.set_axisbelow(True)
+
+    # Improve layout
+    plt.tight_layout()
+
+    if savefig:
+        if RAV_FRS is None:
+            plt.savefig(
+                f"pdf/het-samples/not-annotated/hist-frs-distribution-{i}.pdf",
+                bbox_inches="tight",
+                transparent=True,
+                dpi=300,
+            )
+        else:
+            plt.savefig(
+                f"pdf/het-samples/annotated/hist-frs-distribution-{i}.pdf",
+                bbox_inches="tight",
+                transparent=True,
+                dpi=300,
+            )
+
+    if i < 5 and RAV_FRS is not None:
+        plt.show()
+    else:
+        plt.close()
+
 
 def calculate_results_row(df, description=None, min_FRS=None):
 
