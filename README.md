@@ -6,10 +6,10 @@ The repository has three different folders, one for each thesis chapter.
 
 To reproduce the figures, click the corresponding button next to the chapter titles below:
 
-1) Results Chapter 1: **Rifampicin resistance and compensation in _M. tuberculosis_**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+1) Chapter 3: **Rifampicin resistance and compensation in _M. tuberculosis_**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tb-rnap-compensation/Recreate_figures_paper.ipynb
 )
 
-2) Results Chapter 2: **Minor alleles in _M. tuberculosis_ and _E. coli_**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+2) Chapter 4: **Subpopulations in bacterial infections**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tuberculosis-RNAP-subpopulations/analysis_refactored.ipynb
 )
