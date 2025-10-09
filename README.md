@@ -14,6 +14,6 @@ https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/tuberculosis-RNAP-subpopulations/analysis_refactored.ipynb
 )
 
-2) Chapter 5: **Subpopulations in bacterial infections**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+2) Chapter 5: **Machine Learning for structure-based resistance prediction**:    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/viktoria023/thesis_repository/blob/main/predict_FQ_resistance/03_Run_ML_models.ipynb
 )
